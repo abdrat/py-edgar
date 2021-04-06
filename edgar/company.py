@@ -12,7 +12,7 @@ class Company():
     def __init__(self, name, cik, timeout=10):
         self.name = name
         self.cik = cik
-        self.url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={cik}"
+        self.url = f"https://www.sec.gov/cgi-bin/browse-edgar?CIK={cik}"
         self.timeout = timeout
         self._document_urls = []
 
